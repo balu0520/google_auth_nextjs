@@ -1,0 +1,512 @@
+.accountContainer{
+    padding: 40px;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+}
+.boardMainContainer{
+    border-radius: 20px;
+    width: 300px;
+    height: 100%;
+    background-color: #000000;
+}
+.boardContainer{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.boardContainerHeading{
+    font-family: 'Montserrat';
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.boardSubContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 380px;
+}
+.boardSubSectionContainer{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.boardSectionPara{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    margin-left: 15px;
+}
+.boardBottomSectionPara{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Montserrat";
+    color: #ffffff;
+}
+@media screen and (min-width:767px) {
+    .accountHeadingContainer{
+        width: 80%;
+        overflow-y: scroll;
+        min-height: 93vh;
+    }
+}
+@media screen and (max-width:767px) {
+    .accountContainer{
+        flex-direction: column;
+    }
+    .accountContainer{
+        padding: 20px;
+        height: 100%;
+        min-width: 100vw;
+        display: flex;
+    }
+    .boardMainContainer{
+        width: 100%;
+        height: 150px;
+    }
+    .boardContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .boardSubContainer{
+        flex-direction: column;
+        width: 70%;
+        height: 100px;
+        justify-content: flex-start;
+    }
+    .boardSectionContainer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .boardSubSectionContainer{
+        margin-left: 10px;
+    }
+    .boardSectionPara{
+        margin-left: 5px;
+    }
+    .boardBottomContainer{
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+    .boardContainerHeading{
+        font-family: 'Montserrat';
+        font-size: 30px;
+    }
+    .boardSectionPara{
+        font-size: 14px;
+        font-weight: 700;
+    }
+    
+}
+.headerContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding-bottom: 40px;
+    margin: auto;
+}
+.headerContainerHeading{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Montserrat";
+}
+.subHeaderContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.signOutBtn{
+    outline: none;
+    cursor: pointer;
+    border-width: 0;
+    border-radius: 8px;
+    width: 120px;
+    height: 35px;
+    margin-right: 10px;
+    background-color: #24a0ed;
+    color: #ffffff;
+}
+.inputContainer{
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    margin-right: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.inputField{
+    height: 30px;
+    font-family: "Lato";
+    font-size: 14px;
+    padding: 2px;
+    width: 100%;
+}
+.inputField:focus{
+    outline: none;
+}
+@media screen and(max-width:991px) {
+
+}
+@media screen and (max-width:767px){
+    .accountHeadingContainer{
+        width: 100%;
+        /* margin: auto; */
+        margin-top: 20px;
+        background-color: #F5F5F5;
+    }
+    .headerContainer{
+        width: 100%;
+    }
+    .headerContainerHeading{
+        font-size: 20px;
+    }
+    .inputContainer{
+        width: 150px;
+    }
+    .signOutBtn{
+        width: 100px;
+        height: 25px;
+    }
+    
+    
+}
+@media screen and (max-width:576px) {
+    .accountContainer{
+        padding: 15px;
+    }
+    .headerContainer{
+        width: 100%;
+    }
+    .boardContainerHeading{
+        font-size: 20px;
+    }
+    .boardSectionPara{
+        font-size: 12px;
+    }
+    .headerContainerHeading{
+        font-size: 18px;
+    }
+
+}
+.totalCountContainer{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 25px;
+}
+.totalCountCard{
+    /* width: 20%; */
+    width: 80px;
+    padding: 10px;
+    border-radius: 12px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width:400px) {
+    .totalCountCard{
+        width: 20%;
+        padding: 10px;
+        border-radius: 12px;
+        min-height: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+.totalCountCardPara{
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+}
+.totalCountCardHeading{
+    font-weight: "Open Sans";
+    font-size: 22px;
+    font-weight: 700;
+}
+@media screen and (max-width:991px) {
+    .totalCountCardHeading{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:767px) {
+    .totalCountCardHeading{
+        font-size: 14px;
+    }
+    .totalCountCardPara{
+        font-size: 12px;
+    }
+    .totalCountContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        padding-bottom: 25px;
+        flex-wrap: wrap;
+    }
+    
+}
+@media screen and (max-width:576px) {
+    .totalCountCardHeading{
+        font-size: 12px;
+    }
+    .totalCountCardPara{
+        font-size: 10px;
+    }
+    .inputContainer{
+        display: none;
+    }
+    .boardBottomSectionPara{
+        font-size: 10px;
+    }
+    
+}
+.graphContainer{
+    width: 90%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin: auto;
+    padding-top: 5px;
+    margin-bottom: 40px;
+    padding: 10px;
+}
+.graphSubContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+.graphDetailsHeading{
+    color: #000;
+    font-size: 18px;
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+.graphDetailsPara{
+    color:  #858585;
+    font-size: 14px;
+    font-family: "Montserrat";
+    display: flex;
+    align-items: center;
+}
+.graphDetailsSubContainer{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    margin: auto;
+    justify-content: space-between;
+}
+.graphLegendContainer{
+    display: flex;
+    align-items: center;
+
+}
+.graphLegendPara{
+    color: #000000;
+    font-size: 14px;
+    font-family: "Lato";
+    margin-left: 4px;
+}
+.pieChartContainer{
+    background-color: #ffffff;
+    border-radius: 12px;
+    width: 45%;
+    padding: 20px;
+}
+.pieChartDetailsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+.pieChartTopProductsHeading{
+    color: #000000;
+    font-size: 18px;
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+.pieChartDetailsPara{
+    color: #858585;
+    font-size: 12px;
+    font-family: "Montserrat";
+    display: flex;
+    flex-direction: row;
+}
+.pieChartSubContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.pieChartLegendContainer{
+    display: flex;
+    flex-direction: row;
+}
+.pieChartLegendHeading{
+    color: #000000;
+    font-size: 14px;
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+.pieChartLegendPara{
+    color: #858585;
+    font-size: 12px;
+    font-family: "Lato";
+}
+.scheduleContainer{
+    background-color: #ffffff;
+    border-radius: 12px;
+    width: 45%;
+    padding: 20px;
+}
+.scheduleDetailsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+.scheduleTopProductsHeading{
+    color: #000000;
+    font-size: 18px;
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+.scheduleDetailsPara{
+    color: #858585;
+    font-size: 12px;
+    font-family: "Montserrat";
+    display: flex;
+    align-items: center;
+}
+.scheduleDetailsSubContainer{
+    border-left: 5px solid #9BDD7C;
+    padding-left: 7px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.scheduleDetailsHeading{
+    color: #666;
+    font-size: 14px;
+    font-family: "Lato";
+    font-weight: 700;
+}
+.scheduleDetailsParagraph{
+    color:  #999;
+    font-size: 12px;
+    font-family: Lato;
+}
+.scheduleDetailsSubContainer1{
+    border-left: 5px solid #6972C3;
+    padding-left: 7px;
+    margin-bottom: 10px;
+}
+@media screen and (min-width:991px) {
+    .pieContainer{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+@media screen and (max-width: 991px) {
+    .graphContainer{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .pieContainer{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .pieChartContainer{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .scheduleContainer{
+        width: 90%;
+    }
+    
+}
+@media screen and (max-width:767px) {
+    .graphContainer{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .graphSubContainer{
+        width: 100%;
+    }
+    .graphDetailsHeading{
+        font-size: 14px;
+    }
+    .graphDetailsPara{
+        font-size: 10px;
+    }
+    .pieChartContainer{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .scheduleContainer{
+        width: 90%;
+        margin: auto;
+    }
+}
+@media screen and (max-width:500px){
+    .pieChartLegendHeading{
+        font-size: 10px;
+        font-weight: 500;
+    }
+    .pieChartLegendPara{
+        font-size: 8px;
+    }
+    .pieContainer{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .pieChartContainer{
+        width: 100%;
+        margin-bottom: 20px !important;
+        margin: auto;
+    }
+    .scheduleContainer{
+        width: 100%;
+        margin: auto;
+    }
+}
+@media screen and (max-width:400px) {
+    .barGraphContainer{
+        height: 100px ;
+        width: 100px ;
+    }
+    .graphSubContainer{
+        justify-content: flex-start
+    }
+    .totalCountCard{
+        margin: 3px;
+    }
+}
